@@ -6,7 +6,7 @@ module.exports = {
   connectToServer: function(initServer) {
     MongoClient.connect( "mongodb://localhost:27017/local", function( err, db ) {
       dbConnexion = db;
-      callback();
+      initServer();
     } );
     return dbConnexion;
   },

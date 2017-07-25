@@ -1,20 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { NavBarComponent } from './navbar/navbar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    NavBarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent]
+  bootstrap: [AppComponent, NavBarComponent]
 })
 export class AppModule { }
