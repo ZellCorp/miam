@@ -8,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   constructor() { }
+  isOverlayOn: boolean = false;
 
   ngOnInit() {
-    console.log('caca a');
+  }
+
+  /* Set the width of the side navigation to 250px */
+  openNavBar(): void {
+    this.isOverlayOn = true;
+  }
+
+  /* Set the width of the side navigation to 0 */
+  closeNavBar(): void {
+    this.isOverlayOn = false;
   }
 
 }

@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-var mongoUtil = require('./utils/mongoUtil.js');
+const mongoUtil = require('./utils/mongoUtil.js');
 
 //Init server
 var initServer = () => {
@@ -16,7 +16,7 @@ var initServer = () => {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
   });
-  app.listen(3000, function() {
+  app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
   });
 };

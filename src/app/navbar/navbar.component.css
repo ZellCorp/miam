@@ -1,20 +1,53 @@
-.sidebar {
-  background-color: #3A4651;
-  bottom: 0;
+/* The sidebar navigation menu. */
+.sidenav {
+  background-color: Black;
+  height: 100%;
   left: 0;
-  padding-bottom: 60px;
-  position: absolute;
-  top: 0;
-  -webkit-transition: left .3s ease;
-          transition: left .3s ease;
-  width: 230px;
-  z-index: 20;
-}
-
-.sidebar-fixed .sidebar {
+  overflow-x: hidden; /* Disable horizontal scroll */
   position: fixed;
+  top: 0;
+  transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
+  width: 0; /* 0 width - change with JavaScript */
+  z-index: 1; /* Stay on top */
 }
 
-.sidebar .sidebar-menu > li > a {
-  padding: 15px 15px 15px 20px;
+.sidenav-displayed {
+  width: 250px;
+}
+
+/* The sidebar menu links. */
+.sidenav a {
+  color: #818181;
+  display: block;
+  font-size: 25px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+/* The overlay when sidebar is open. */
+.overlay-on {
+  background-color: #000000;
+  background-color: rgba(0,0,0,.6);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*Hide overlay when sidebar is closed. */
+.overlay-off {
+  background-color: white;
+  opacity: 0;
+  width: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

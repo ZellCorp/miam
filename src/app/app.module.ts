@@ -5,6 +5,7 @@ import { NavBarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
+import { NgClass } from '@angular/common';
 
 @NgModule({
   declarations: [
