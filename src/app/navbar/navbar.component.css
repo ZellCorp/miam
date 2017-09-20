@@ -10,7 +10,9 @@
   width: 0; /* 0 width - change with JavaScript */
   z-index: 1; /* Stay on top */
 }
-
+#main {
+  margin-left: 250px;
+}
 .sidenav-displayed {
   width: 250px;
 }

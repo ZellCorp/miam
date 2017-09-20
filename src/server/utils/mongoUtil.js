@@ -12,8 +12,5 @@ module.exports = {
       } else reject(err);
     });
   }),
-
-  getDb: function () {
-    return dbConnexion;
-  }
+  getDb: () => dbConnexion
 };
