@@ -3,7 +3,7 @@ const router = express.Router();
 var mongoUtil = require('../utils/mongoUtil.js');
 var db = mongoUtil.getDb();
 
-router.get('/', (req, res) => {
+router.get('/login', (req, res) => {
   console.log(db);
   res.send('banane');
 });
