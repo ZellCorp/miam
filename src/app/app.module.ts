@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { NgClass } from '@angular/common';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantService } from './restaurant.service';
-import { MiamRoutingModule } from './miam-routing/miam-routing.module';
 
 @NgModule({
   declarations: [
