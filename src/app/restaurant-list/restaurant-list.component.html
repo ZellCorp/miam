@@ -1,3 +1,69 @@
-<p>
-  restaurant-list works!
-</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
+  Add
+</button>
+<!-- Deck of vote card start-->
+<div class="card-deck-wrapper">
+  <div class="card-deck">
+    <div *ngFor='let restaurant of restaurants;' class="card text-center card-outline-primary">
+      <div class="card-header">
+        {{restaurant.name}}
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">{{restaurant.name}}</h4>
+        <p class="card-text">{{restaurant.description}}</p>
+        <a href="#" class="btn btn-primary">Vote</a>
+      </div>
+      <div class="card-footer text-muted">
+        last selection: {{restaurant.lastSelection}}
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Deck of vote card end -->
+
+<!-- Modal -->
+<div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add a new restaurant</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Modal body start-->
+        <div class="container">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">category</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="category">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Adress</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Adress">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Modal body end-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="add()">Add restaurant</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->

@@ -1,13 +1,30 @@
-<nav>
-  <a class="navbar-brand" href="#">Header</a>
-  <div [ngClass]="isOverlayOn ? 'sidenav sidenav-displayed' : 'sidenav'">
-    <a href="#">Home</a>
-    <a routerLink="/user" routerLinkActive="active">I'm hungry</a>
-    <a href="#">Role the dice !</a>
-    <a href="#">The restaurants list !</a>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Miam</a>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants">Restaurants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/random">Vote</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/random">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/random">Account</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-  <!-- Use any element to open the sidenav -->
-  <span (click)="openNavBar()">open</span>
 </nav>
-<!-- Black overlay displayed when side menu is open-->
-<div [ngClass]="isOverlayOn ? 'overlay-on': 'overlay-off'" (click)="closeNavBar()"></div>

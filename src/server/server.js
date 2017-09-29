@@ -9,9 +9,11 @@ var initServer = () => {
   const auth = require('./routes/auth.js');
   const user = require('./routes/user.js');
   const api = require('./routes/api.js');
+  const restaurant = require('./routes/restaurant.js');
   app.use('/auth', auth);
   app.use('/user', user);
-  app.use('/api', api);
+  app.use('/uapi', api);
+  app.use('/api/restaurant', restaurant);
   app.use(express.static(path.join(__dirname, 'dist')));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
