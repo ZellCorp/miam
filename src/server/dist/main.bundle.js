@@ -118,22 +118,24 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__restaurant_list_restaurant_list_component__ = __webpack_require__("../../../../../src/app/restaurant-list/restaurant-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__restaurant_service__ = __webpack_require__("../../../../../src/app/restaurant.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routes__ = __webpack_require__("../../../../../src/app/app-routes.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__restaurant_list_restaurant_restaurant_component__ = __webpack_require__("../../../../../src/app/restaurant-list/restaurant/restaurant.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__restaurant_list_restaurant_menu_menu_component__ = __webpack_require__("../../../../../src/app/restaurant-list/restaurant/menu/menu.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__main_main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__restaurant_list_restaurant_list_component__ = __webpack_require__("../../../../../src/app/restaurant-list/restaurant-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__restaurant_service__ = __webpack_require__("../../../../../src/app/restaurant.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__vote_service__ = __webpack_require__("../../../../../src/app/vote.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routes__ = __webpack_require__("../../../../../src/app/app-routes.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__restaurant_list_restaurant_restaurant_component__ = __webpack_require__("../../../../../src/app/restaurant-list/restaurant/restaurant.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__main_main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -156,23 +158,23 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__["a" /* NavBarComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__restaurant_list_restaurant_list_component__["a" /* RestaurantListComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__restaurant_list_restaurant_restaurant_component__["a" /* RestaurantComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__restaurant_list_restaurant_menu_menu_component__["a" /* MenuComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__main_main_component__["a" /* MainComponent */],
-            __WEBPACK_IMPORTED_MODULE_4__header_header_component__["a" /* HeaderComponent */]
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__navbar_navbar_component__["a" /* NavBarComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__restaurant_list_restaurant_list_component__["a" /* RestaurantListComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__restaurant_list_restaurant_restaurant_component__["a" /* RestaurantComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__main_main_component__["a" /* MainComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__header_header_component__["a" /* HeaderComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_9__app_routes__["a" /* appRouterModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_11__app_routes__["a" /* appRouterModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_8__restaurant_service__["a" /* RestaurantService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__["a" /* NavBarComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_9__restaurant_service__["a" /* RestaurantService */], __WEBPACK_IMPORTED_MODULE_10__vote_service__["a" /* VoteService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_7__navbar_navbar_component__["a" /* NavBarComponent */]]
     })
 ], AppModule);
 
@@ -454,7 +456,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/restaurant-list/restaurant-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Button trigger modal -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#create\">\r\n  Add\r\n</button>\r\n<!-- Deck of vote card start-->\r\n<div class=\"card-deck-wrapper\">\r\n  <div class=\"card-deck\">\r\n    <div *ngFor='let restaurant of restaurants;' class=\"card text-center card-outline-primary\">\r\n      <div class=\"card-header\">\r\n        {{restaurant.name}}\r\n      </div>\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">{{restaurant.name}}</h4>\r\n        <p class=\"card-text\">{{restaurant.description}}</p>\r\n        <a href=\"#\" class=\"btn btn-primary\">Vote</a>\r\n      </div>\r\n      <div class=\"card-footer text-muted\">\r\n        last selection: {{restaurant.lastSelection}}\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<!-- Deck of vote card end -->\r\n\r\n<!-- Modal -->\r\n<div class=\"modal fade\" id=\"create\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h5 class=\"modal-title\">Add a new restaurant</h5>\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Cancel\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <!-- Modal body start-->\r\n        <div class=\"container\">\r\n          <form>\r\n            <div class=\"form-group row\">\r\n              <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Name</label>\r\n              <div class=\"col-sm-10\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Name\">\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n              <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">category</label>\r\n              <div class=\"col-sm-10\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"category\">\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n              <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Adress</label>\r\n              <div class=\"col-sm-10\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Adress\">\r\n              </div>\r\n            </div>\r\n          </form>\r\n        </div>\r\n      </div>\r\n      <!-- Modal body end-->\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cancel</button>\r\n        <button type=\"button\" class=\"btn btn-primary\" (click)=\"add()\">Add restaurant</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<!-- Modal -->\r\n"
+module.exports = "<!-- Button trigger modal -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#create\">\r\n  Add a new restaurant\r\n</button>\r\n<!-- Deck of vote card start-->\r\n<div class=\"card-deck-wrapper\">\r\n  <div class=\"card-deck\">\r\n    <div *ngFor='let restaurant of restaurants;' class=\"card text-center card-outline-primary\">\r\n      <div class=\"card-header\">\r\n        {{restaurant.name}}\r\n      </div>\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">{{restaurant.name}}</h4>\r\n        <p class=\"card-text\">{{restaurant.description}}</p>\r\n        <button (click)=\"vote(restaurant.name)\" class=\"btn btn-primary\">Vote</button>\r\n      </div>\r\n      <div class=\"card-footer text-muted\">\r\n        last selection: {{restaurant.lastSelection}}\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<!-- Deck of vote card end -->\r\n\r\n<!-- Modal -->\r\n<div class=\"modal fade\" id=\"create\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h5 class=\"modal-title\">Add a new restaurant</h5>\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Cancel\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <!-- Modal body start-->\r\n        <div class=\"container\">\r\n          <form>\r\n            <div class=\"form-group row\">\r\n              <label for=\"name\" class=\"col-sm-3 col-form-label\">Name</label>\r\n              <div class=\"col-sm-9\">\r\n                <input name=\"name\" [(ngModel)]=\"restaurant.name\" type=\"text\" class=\"form-control\" placeholder=\"Name\">\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n              <label for=\"category\" class=\"col-sm-3 col-form-label\">Category</label>\r\n              <div class=\"col-sm-9\">\r\n                <input type=\"text\" name=\"category\" [(ngModel)]=\"restaurant.category\" class=\"form-control\" placeholder=\"Category\">\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n              <label for=\"address\" class=\"col-sm-3 col-form-label\">Adress</label>\r\n              <div class=\"col-sm-9\">\r\n                <input type=\"text\" name=\"address\" [(ngModel)]=\"restaurant.address\" class=\"form-control\" placeholder=\"Adress\">\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n              <label for=\"description\" class=\"col-sm-3 col-form-label\">Description</label>\r\n              <div class=\"col-sm-9\">\r\n                <textarea type=\"text\" name=\"description\" [(ngModel)]=\"restaurant.description\" rows=\"3\" class=\"form-control\" placeholder=\"Description\"></textarea>\r\n              </div>\r\n            </div>\r\n          </form>\r\n        </div>\r\n      </div>\r\n      <!-- Modal body end-->\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cancel</button>\r\n        <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#create\" (click)=\"add()\">Add restaurant</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<!-- Modal -->\r\n"
 
 /***/ }),
 
@@ -464,7 +466,9 @@ module.exports = "<!-- Button trigger modal -->\r\n<button type=\"button\" class
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RestaurantListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__restaurant_service__ = __webpack_require__("../../../../../src/app/restaurant.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__restaurant__ = __webpack_require__("../../../../../src/app/restaurant.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__restaurant_service__ = __webpack_require__("../../../../../src/app/restaurant.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vote_service__ = __webpack_require__("../../../../../src/app/vote.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -476,14 +480,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var RestaurantListComponent = (function () {
-    function RestaurantListComponent(restaurantService) {
+    function RestaurantListComponent(restaurantService, voteService) {
         this.restaurantService = restaurantService;
+        this.voteService = voteService;
+        this.restaurant = new __WEBPACK_IMPORTED_MODULE_1__restaurant__["a" /* Restaurant */]();
     }
+    ;
     RestaurantListComponent.prototype.add = function () {
+        var _this = this;
+        console.log(this.restaurant);
+        this.restaurantService.addRestaurant(this.restaurant).subscribe(function (result) { return _this.restaurant = result; });
+        this.restaurants.push(this.restaurant);
         console.log('button add');
     };
-    ;
+    RestaurantListComponent.prototype.vote = function (restaurantReference) {
+        this.voteService.vote(restaurantReference).subscribe(function (response) { return console.log(response); });
+        console.log('vote Ok !');
+    };
     RestaurantListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.restaurantService.getRestaurants().subscribe(function (restaurants) { return _this.restaurants = restaurants; });
@@ -496,72 +512,11 @@ RestaurantListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/restaurant-list/restaurant-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/restaurant-list/restaurant-list.component.css")],
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__restaurant_service__["a" /* RestaurantService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__restaurant_service__["a" /* RestaurantService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__restaurant_service__["a" /* RestaurantService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__restaurant_service__["a" /* RestaurantService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__vote_service__["a" /* VoteService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__vote_service__["a" /* VoteService */]) === "function" && _b || Object])
 ], RestaurantListComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=restaurant-list.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/restaurant-list/restaurant/menu/menu.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/restaurant-list/restaurant/menu/menu.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  menu works!\n</p>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/restaurant-list/restaurant/menu/menu.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var MenuComponent = (function () {
-    function MenuComponent() {
-    }
-    MenuComponent.prototype.ngOnInit = function () {
-    };
-    return MenuComponent;
-}());
-MenuComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-menu',
-        template: __webpack_require__("../../../../../src/app/restaurant-list/restaurant/menu/menu.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/restaurant-list/restaurant/menu/menu.component.css")]
-    }),
-    __metadata("design:paramtypes", [])
-], MenuComponent);
-
-//# sourceMappingURL=menu.component.js.map
 
 /***/ }),
 
@@ -651,36 +606,94 @@ var RestaurantService = (function () {
     function RestaurantService(http) {
         this.http = http;
     }
+    ;
     RestaurantService.prototype.getRestaurants = function () {
         return this.http
-            .get("/api/restaurant")
+            .get("/api/restaurants")
             .map(function (response) {
             return response.json();
         });
     };
-    RestaurantService.prototype.add = function (restaurant) {
+    ;
+    RestaurantService.prototype.addRestaurant = function (restaurant) {
         return this.http
-            .post("/api/restaurant", restaurant)
+            .post("/api/restaurants", restaurant)
             .map(function (response) {
             return response.json();
         });
     };
-    RestaurantService.prototype.vote = function (reference) {
-        return this.http
-            .put("/api/restaurant", reference)
-            .map(function (response) {
-            return response.json();
-        });
-    };
+    ;
     return RestaurantService;
 }());
 RestaurantService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], RestaurantService);
 
 var _a;
 //# sourceMappingURL=restaurant.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/restaurant.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Restaurant; });
+var Restaurant = (function () {
+    function Restaurant() {
+    }
+    return Restaurant;
+}());
+
+//# sourceMappingURL=restaurant.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/vote.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VoteService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var VoteService = (function () {
+    function VoteService(http) {
+        this.http = http;
+        this.options = {
+            headers: new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json;charset=UTF-8' }),
+        };
+    }
+    VoteService.prototype.vote = function (restaurantReference) {
+        return this.http
+            .patch("/api/votes/today", { name: restaurantReference }, this.options)
+            .map(function (response) {
+            return response.json();
+        });
+    };
+    return VoteService;
+}());
+VoteService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], VoteService);
+
+var _a;
+//# sourceMappingURL=vote.service.js.map
 
 /***/ }),
 

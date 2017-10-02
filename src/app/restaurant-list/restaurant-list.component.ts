@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Restaurant } from '../restaurant';
 import { RestaurantService } from '../restaurant.service';
+import { VoteService } from '../vote.service';
 
 @Component({
   selector: 'app-restaurant-list',
@@ -11,13 +13,21 @@ export class RestaurantListComponent implements OnInit {
   restaurants: Restaurant[];
   restaurant: Restaurant;
 
+  constructor(private restaurantService: RestaurantService, private voteService: VoteService) {
+    this.restaurant = new Restaurant();
+  };
+
   add(): void {
-    console.log('button add');
+    this.restaurantService.addRestaurant(this.restaurant).subscribe(response => this.restaurant = response);
+    this.restaurants.push(this.restaurant);
   }
-  constructor(private restaurantService: RestaurantService) { };
+
+  vote(restaurantAddress: string): void {
+    this.voteService.vote(restaurantAddress).subscribe(response => console.log(response));
+  }
 
   ngOnInit() {
-    this.restaurantService.getRestaurants().subscribe(restaurants => this.restaurants = restaurants);
+    this.restaurantService.getRestaurants().subscribe(response => this.restaurants = response);
   }
 
 }

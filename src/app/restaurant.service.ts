@@ -7,30 +7,21 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class RestaurantService {
-  constructor(private http: Http) { }
+  constructor(private http: Http) { };
 
   getRestaurants(): Observable<Restaurant[]> {
     return this.http
-      .get(`/api/restaurant`)
+      .get(`/api/restaurants`)
       .map(response => {
         return response.json() as Restaurant[];
       });
-  }
+  };
 
-  add(restaurant: Restaurant): Observable<any> {
+  addRestaurant(restaurant: Restaurant): Observable<any> {
     return this.http
-      .post(`/api/restaurant`, restaurant)
+      .post(`/api/restaurants`, restaurant)
       .map(response => {
         return response.json();
       });
-  }
-
-  vote(reference: string): Observable<any> {
-    return this.http
-      .put(`/api/restaurant`, reference)
-      .map(response => {
-        return response.json();
-      });
-  }
-
+  };
 }

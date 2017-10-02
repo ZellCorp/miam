@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
-  Add
+  Add a new restaurant
 </button>
 <!-- Deck of vote card start-->
 <div class="card-deck-wrapper">
@@ -12,7 +12,7 @@
       <div class="card-block">
         <h4 class="card-title">{{restaurant.name}}</h4>
         <p class="card-text">{{restaurant.description}}</p>
-        <a href="#" class="btn btn-primary">Vote</a>
+        <button (click)="vote(restaurant.name)" class="btn btn-primary">Vote</button>
       </div>
       <div class="card-footer text-muted">
         last selection: {{restaurant.lastSelection}}
@@ -38,21 +38,27 @@
         <div class="container">
           <form>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Name">
+              <label for="name" class="col-sm-3 col-form-label">Name</label>
+              <div class="col-sm-9">
+                <input name="name" [(ngModel)]="restaurant.name" type="text" class="form-control" placeholder="Name">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">category</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="category">
+              <label for="category" class="col-sm-3 col-form-label">Category</label>
+              <div class="col-sm-9">
+                <input type="text" name="category" [(ngModel)]="restaurant.category" class="form-control" placeholder="Category">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Adress</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Adress">
+              <label for="address" class="col-sm-3 col-form-label">Adress</label>
+              <div class="col-sm-9">
+                <input type="text" name="address" [(ngModel)]="restaurant.address" class="form-control" placeholder="Adress">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="description" class="col-sm-3 col-form-label">Description</label>
+              <div class="col-sm-9">
+                <textarea type="text" name="description" [(ngModel)]="restaurant.description" rows="3" class="form-control" placeholder="Description"></textarea>
               </div>
             </div>
           </form>
@@ -61,7 +67,7 @@
       <!-- Modal body end-->
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" (click)="add()">Add restaurant</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create" (click)="add()">Add restaurant</button>
       </div>
     </div>
   </div>
